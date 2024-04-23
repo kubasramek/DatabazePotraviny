@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="450">
     <Grid>
-        <ListView  HorizontalAlignment="Left" Width="170" Margin="10,10,0,126" x:Name="Seznam"/>
+        <ListView  HorizontalAlignment="Left" Width="188" Margin="10,10,0,10" x:Name="Seznam"/>
 
-        <Button Content="Přidat" HorizontalAlignment="Left" Margin="225,33,0,0" VerticalAlignment="Top" Height="46" Width="108" Click="Button_Click"/>
-        <Button Content="Editovat" HorizontalAlignment="Left" Margin="225,131,0,0" VerticalAlignment="Top" Height="46" Width="108" Click="Button_Click_1"/>
-        <Button Content="Odstranit" HorizontalAlignment="Left" Margin="225,229,0,0" VerticalAlignment="Top" Height="46" Width="108" Click="Button_Click_2"/>
+        <Button Content="Přidat" HorizontalAlignment="Left" Margin="225,33,0,0" VerticalAlignment="Top" Height="46" Width="108" Click="Button_Click" Background="#FFE6D51E"/>
+        <Button Content="Editovat" HorizontalAlignment="Left" Margin="225,131,0,0" VerticalAlignment="Top" Height="46" Width="108" Click="Button_Click_1" Background="#FFE6D51E"/>
+        <Button Content="Odstranit" HorizontalAlignment="Left" Margin="225,229,0,0" VerticalAlignment="Top" Height="46" Width="108" Click="Button_Click_2" Background="#FFE6D51E"/>
 
     </Grid>
 </Window>

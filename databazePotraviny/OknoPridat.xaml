@@ -14,7 +14,7 @@
                  VerticalAlignment="Top" 
                  Width="262" 
                  Height="32"
-                 x:Name="TBNazev"/>
+                 x:Name="TBNazev" Background="#FFA5A2A2"/>
 
         <TextBox HorizontalAlignment="Left" 
                  Margin="59,156,0,0" 
@@ -23,7 +23,7 @@
                  VerticalAlignment="Top" 
                  Width="262" 
                  Height="32"
-                 x:Name="TBCena"/>
+                 x:Name="TBCena" Background="#FFA5A2A2"/>
         <Label Content="Nazev" 
                HorizontalAlignment="Left" 
                Margin="59,51,0,0" 
@@ -60,6 +60,6 @@
             VerticalAlignment="Top" 
             Width="262" 
             Height="32"
-            x:Name="TBPocet"/>
+            x:Name="TBPocet" Background="#FFA5A2A2"/>
     </Grid>
 </Window>
