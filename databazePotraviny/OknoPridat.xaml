@@ -1,0 +1,65 @@
+﻿<Window x:Class="databazePotraviny.OknoPridat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:databazePotraviny"
+        mc:Ignorable="d"
+        Title="OknoPridat" Height="450" Width="450">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" 
+                 Margin="59,82,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="262" 
+                 Height="32"
+                 x:Name="TBNazev"/>
+
+        <TextBox HorizontalAlignment="Left" 
+                 Margin="59,156,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="262" 
+                 Height="32"
+                 x:Name="TBCena"/>
+        <Label Content="Nazev" 
+               HorizontalAlignment="Left" 
+               Margin="59,51,0,0" 
+               VerticalAlignment="Top" 
+               Width="141"/>
+
+        <Label Content="Cena" 
+               HorizontalAlignment="Left" 
+               Margin="59,125,0,0" 
+               VerticalAlignment="Top" 
+               Width="141"/>
+
+        <Label Content="Pocet" 
+               HorizontalAlignment="Left" 
+               Margin="59,199,0,0" 
+               VerticalAlignment="Top" 
+               Width="141"/>
+
+        <Button Content="Uložit" 
+                HorizontalAlignment="Left" 
+                Margin="59,300,0,0" 
+                VerticalAlignment="Top" 
+                Height="32" 
+                Width="84" Click="Button_Click" Background="#FFE2C925"/>
+
+        <Button Content="Zahodit" 
+                Margin="298,300,59,0" 
+                VerticalAlignment="Top" 
+                Height="32" Click="Button_Click_1" Background="#FFDCC31A"/>
+        <TextBox HorizontalAlignment="Left" 
+            Margin="59,230,0,0" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Top" 
+            Width="262" 
+            Height="32"
+            x:Name="TBPocet"/>
+    </Grid>
+</Window>
