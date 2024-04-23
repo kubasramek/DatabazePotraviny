@@ -1,4 +1,5 @@
-﻿using System;
+﻿using databazePotraviny;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,30 +13,26 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace databazePotraviny
+namespace DatabazePotraviny
 {
     /// <summary>
-    /// Interakční logika pro OknoPridat.xaml
+    /// Interakční logika pro OknoEdit.xaml
     /// </summary>
-    
-    public partial class OknoPridat : Window
+    public partial class OknoEdit : Window
     {
-        List<Polozka> _polozky;
-        public OknoPridat(List<Polozka> polozky)
+        public Polozka Z {  get; set; }
+        public OknoEdit(Polozka z)
         {
             InitializeComponent();
-            _polozky = polozky;
+            Z = z;
+            DataContext = Z;
         }
-        private int VytvorID() => _polozky.Count + 1;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string nazev = TBNazev.Text;
-            int cena = int.Parse(TBCena.Text);
-            int pocet = int.Parse(TBPocet.Text);
-
-            Polozka Novy = new Polozka(VytvorID(),nazev, cena, pocet);
-            _polozky.Add(Novy);
+            Z.Nazev = ProNazev.Text;
+            Z.Cena = int.Parse(ProCenu.Text);
+            Z.Pocet = int.Parse(ProPocet.Text);
 
             this.Close();
         }

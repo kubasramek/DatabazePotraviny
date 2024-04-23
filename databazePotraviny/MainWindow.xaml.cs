@@ -37,5 +37,27 @@ namespace DatabazePotraviny
             Seznam.ItemsSource = Polozky;
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Polozka? hledany = Seznam?.SelectedItem as Polozka;
+            if (hledany != null)
+            {
+                OknoEdit edit = new OknoEdit(hledany);
+                edit.Closing += Dialog_Closing;
+                edit.ShowDialog();
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Polozka? hledana = Seznam?.SelectedItem as Polozka;
+            MessageBoxResult volba = MessageBox.Show($"Odebrat {hledana.Nazev}?", "Odebrat",MessageBoxButton.YesNo);
+            if(volba == MessageBoxResult.Yes)
+            {
+                Polozky.Remove(hledana);
+                Seznam.ItemsSource = null;
+                Seznam.ItemsSource = Polozky;
+            }
+        }
     }
 }
